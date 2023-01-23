@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+
+    
+}
+.page-container {
+    display: flex;
+
+}
+
+.left-image {
+    width: 35vw;
+}
+
+.image {
+    height: 100vh;
+    margin: 0;
+}
+
+.right-pane {
+    padding: 20px 0 20px 0;
+    justify-content: flex-start;
+    background-color: rgb(233, 228, 221);
+    margin-left: 2vw;
+    /* max-width: 50vw; */
+
+}
+
+.pane-row {
+    margin: 20px;
+    padding-left: 30px;
+}
+
+.form-block {
+    box-shadow: 0 5px 5px 0 rgb(56, 55, 55);
+}
