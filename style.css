@@ -1,6 +1,13 @@
+:root {
+    --theme1: rgb(47,112,159);
+    /* rgb(158, 101, 125); */
+}
+
+
 * {
     margin: 0px;
     box-sizing: border-box;
+
 
 
 }
@@ -61,7 +68,6 @@ h2 {
 .form-block {
     box-shadow: 0 10px 10px 0 rgba(56, 55, 55, 0.603);
     background-color: rgb(255, 255, 255);
-    ;
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
@@ -83,17 +89,20 @@ h2 {
 }
 
 label {
-    color: rgb(65, 65, 65);
+    color: rgb(56, 55, 55);
 }
 
 input {
     padding: 4px;
-    border: 2px solid rgb(158, 101, 125);
+    border: 2px solid #cccdce;
     border-radius: 5px;
 }
 
 input:focus {
     background-color: rgba(0, 252, 71, 0.13);
+    outline: none;
+    border-color: var(--theme1);
+    box-shadow: 8px 8px 12px 0  var(--theme1)
 }
 
 #button {
@@ -102,25 +111,24 @@ input:focus {
     width: 180px;
     height: 70px;
     font-size: larger;
-    color: rgb(158, 101, 125);
-    ;
-    border: 2px solid rgb(158, 101, 125);
+    color: var(--theme1);
+    border: 2px solid var(--theme1);
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
 }
 
 #button:hover {
-    background-color: rgb(158, 101, 125);
+    background-color: var(--theme1);
     color: white;
 
 }
 
 /*----------------------*/
 #log-in {
-    color: rgb(82, 82, 82);
+    color: rgb(66, 65, 65);
 }
 
 a {
-    color: rgb(158, 101, 125);
+    color: var(--theme1);
 
 }
