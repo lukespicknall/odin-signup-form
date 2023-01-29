@@ -20,8 +20,8 @@ position: relative;
 .left-image {
     background-image: url("VeryLargeArrayNM-LJS-cropped.JPG");
     background-position: left;
-    /* background-size:cover; */
-    height: max(900px, 100vh); /* THIS fixed the y axis layout! */
+    background-size:cover;
+    height: max(710px, 100vh); /* THIS fixed the y axis layout! */
     min-width: 40vw;
 }
 
@@ -37,7 +37,7 @@ position: relative;
 /* -----------------------------------*/
 .right-pane {
     padding: 2vh 0 0px 0;
-    height: max(900px, 100vh);
+    height: max(710px, 100vh);
     background-color: rgb(240, 239, 241);
 
 
