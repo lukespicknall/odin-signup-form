@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -35,26 +36,32 @@
                     <div class="form-field">
                         <label for="first-name">First Name</label>
                         <input type="text" id="first-name" name="first-name" required>
+                        <span class="error"></span>
                     </div>
                     <div class="form-field">
                         <label for="last-name">Last Name</label>
                         <input type="text" id="last-name" name="last-name">
+                        <span class="error"></span>
                     </div>
                     <div class="form-field">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email">
+                        <span class="error"></span>
                     </div>
                     <div class="form-field">
                         <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" title="Enter your phone number">
+                        <span class="error"></span>
                     </div>
                     <div class="form-field">
                         <label for="pword">Password</label>
                         <input type="password" id="pword" name="pword">
+                        <span class="error"></span>
                     </div>
                     <div class="form-field">
                         <label for="pword-confirm">Confirm Password</label>
                         <input type="password" id="pword-confirm" name="pword-confirm">
+                        <span class="error"></span>
                     </div>
                 </div>
                 <button class="pane-row" id="button"><strong>Create Account</strong></button>

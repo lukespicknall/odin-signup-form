@@ -128,10 +128,29 @@ input {
     padding: 4px;
     border: 2px solid #cccdce;
     border-radius: 5px;
+    border-color: rgba(56, 55, 55, 0.356);
 }
 
+.definput {
+    border-color: rgba(56, 55, 55, 0.356);
+}
+
+.notValid {
+    background-color: rgba(252, 0, 0, 0.13);
+    outline: none;
+    border-color: red;
+    box-shadow: 8px 8px 12px 0  red
+} 
+
+/* input:valid {
+    background-color: rgba(0, 252, 71, 0.13);;
+    outline: none;
+    border-color: rgb(22, 201, 46);
+    /* box-shadow: 8px 8px 12px 0  red */
+
+
 input:focus {
-    background-color: rgba(0, 252, 71, 0.13);
+    background-color: rgba(0, 109, 252, 0.13);
     outline: none;
     border-color: var(--theme1);
     box-shadow: 8px 8px 12px 0  var(--theme1)
@@ -164,3 +183,24 @@ input:focus {
 a {
     color: var(--theme1);
 }
+
+
+
+
+
+.error {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 12px;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    height: 20px;
+    padding: 0.3em;
+  }
