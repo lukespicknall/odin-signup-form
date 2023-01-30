@@ -142,12 +142,12 @@ input {
     box-shadow: 8px 8px 12px 0  red
 } 
 
-/* input:valid {
+.isValid {
     background-color: rgba(0, 252, 71, 0.13);;
     outline: none;
     border-color: rgb(22, 201, 46);
     /* box-shadow: 8px 8px 12px 0  red */
-
+}
 
 input:focus {
     background-color: rgba(0, 109, 252, 0.13);
