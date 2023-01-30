@@ -1,20 +1,29 @@
 :root {
     --theme1: rgb(47,112,159);
     /* rgb(158, 101, 125); */
-}
 
+}
 
 * {
     margin: 0px;
     box-sizing: border-box;
-
+    font-family: sans-serif;
+    font-family: 'lemon';
 
 
 }
 
+@font-face {
+    font-family: 'lemon';
+    src: url('LEMONMILK-Light.otf');
+    font-size: none;
+}
+@font-face {
+    font-family: 'dissolve';
+    src: url('Disolve_light.ttf');
+}
 .page-container {
     display: flex;
-
     position: relative;
 }
 
@@ -22,6 +31,7 @@
 .image-pane {
 display: flex; 
 position: relative;
+justify-content: space-between;
 }
 
 .left-image {
@@ -33,23 +43,44 @@ position: relative;
 }
 
 .banner {
+    display: flex;
     position: absolute;
-    
+    top: 9vh;
+    width: 100%;
+    height: clamp(90px, 15vh, 100px);
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+.logo-text {
+    font-family: 'dissolve';
+    font-size: max(50px, 10vh, 60px);
+    color:white
 }
 
 .footer {
+    display: flex;
     position: absolute;
-    
+    width: 100%;
+    bottom: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer-text {
+    font-family: 'lemon';
+    font-size: max(1.5vh, 10px);
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
 }
 /* -----------------------------------*/
 .right-pane {
     padding: 2vh 0 0px 0;
     height: max(710px, 100vh);
     background-color: rgb(240, 239, 241);
-
-
 }
-
 
 .pane-row {
     margin: 20px;
@@ -57,12 +88,14 @@ position: relative;
     margin-left: 40px;
 }
 
-h2 {
+.about,
+.welcome {
+    font-family: 'lemon';
+    font-size: 19px;
     margin-bottom: 5vh;
     max-width: 80vw;
     min-width: 600px;
     color: rgb(58, 58, 58);
-
 }
 
 .form-block {
@@ -76,8 +109,6 @@ h2 {
     padding-right: 50px;
     padding-left: 40px;
     margin-bottom: 20px;
-
-
 }
 
 .form-field {
@@ -90,6 +121,7 @@ h2 {
 
 label {
     color: rgb(56, 55, 55);
+    font-size: 12px;
 }
 
 input {
@@ -106,29 +138,29 @@ input:focus {
 }
 
 #button {
-    margin-top: 2vh;
+    margin-top: 3vh;
     margin-bottom: 2vh;
-    width: 180px;
+    width: 245px;
     height: 70px;
-    font-size: larger;
+    font-size: 22px;
     color: var(--theme1);
     border: 2px solid var(--theme1);
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
+    transition:all .2s
 }
 
 #button:hover {
     background-color: var(--theme1);
     color: white;
-
 }
 
 /*----------------------*/
 #log-in {
     color: rgb(66, 65, 65);
+    font-size: 12px;
 }
 
 a {
     color: var(--theme1);
-
 }
