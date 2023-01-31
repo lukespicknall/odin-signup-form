@@ -2,50 +2,124 @@ const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
-// const emailError = document.querySelector('#email + span.error')
-// const form = document.querySelector("form")
 const pword = document.getElementById("pword");
-// notValidate();
+const pwordConf = document.getElementById("pword-confirm");
+// const form = document.querySelector("form")
 
+
+// Checks validity and assings className
+// based on state
 firstName.addEventListener("input", (e) => {
     if (firstName.validity.tooShort) {
         firstName.className = 'notValid'
-        firstName.setCustomValidity("We need your name.");
-    } else {
-        firstName.className = 'isValid'
-        firstName.setCustomValidity("");
-    }
+        // firstName.setCustomValidity("What is your name?");
+    } else if (firstName.value == "") {
+            firstName.className = 'def-input'
+            firstName.setCustomValidity("What is your name?");
+        } else {
+            firstName.className = 'isValid';
+            firstName.setCustomValidity("");
+        }
 });
 
+// Have not fully customized any of the below Listener function yet 
 lastName.addEventListener("input", (e) => {
     if (lastName.validity.tooShort) {
         lastName.className = 'notValid'
-        lastName.setCustomValidity("We need your name.");
-    } else {
-        lastName.className = 'isValid'
-        lastName.setCustomValidity("");
-    }
+        // lastName.setCustomValidity("What is your name?");
+    } else if (lastName.value == "") {
+            lastName.className = 'def-input'
+            lastName.setCustomValidity("Lets be specific");
+        } else {
+            lastName.className = 'isValid';
+            lastName.setCustomValidity("");
+        }
 });
 
+
+//Validity alert occurs on every keystroke after
+//first validity check. this is annoying.
 email.addEventListener("input", (e) => {
     if (email.validity.typeMismatch) {
         email.className = 'notValid'
-        email.setCustomValidity("Must be in email form.");
-    } else {
-        email.className = 'isValid'
-        email.setCustomValidity("");
-    }
+        email.setCustomValidity("Must be in email form");
+    } else if (email.value == "") {
+            email.className = 'def-input'
+            email.setCustomValidity("Enter your email");
+        } else {
+            email.className = 'isValid';
+            email.setCustomValidity("");
+        }
 });
 
 phone.addEventListener("input", (e) => {
     if (phone.validity.typeMismatch) {
         phone.className = 'notValid'
-        phone.setCustomValidity("Must be in phone form.");
-    } else {
-        phone.className = 'isValid'
-        phone.setCustomValidity("");
-    }
+        phone.setCustomValidity("Enter a 10 digit number");
+    } else if (phone.value == "") {
+            phone.className = 'def-input'
+            phone.setCustomValidity("Enter your phone number");
+        } else {
+            phone.className = 'isValid';
+            phone.setCustomValidity("");
+        }
 });
+
+pword.addEventListener("input", (e) => {
+    if (pword.validity.tooShort) {
+        pword.className = 'notValid'
+        // pword.setCustomValidity("What is your name?");
+    } else if (pword.value == "") {
+            pword.className = 'def-input'
+            pword.setCustomValidity("What is your name?");
+        } else {
+            pword.className = 'isValid';
+            pword.setCustomValidity("");
+        }
+});
+
+pwordConf.addEventListener("input", (e) => {
+    if (pwordConf.validity.tooShort) {
+        pwordConf.className = 'notValid'
+        // pwordConf.setCustomValidity("What is your name?");
+    } else if (pwordConf.value == "") {
+            pwordConf.className = 'def-input'
+            pwordConf.setCustomValidity("What is your name?");
+        } else {
+            pwordConf.className = 'isValid';
+            pwordConf.setCustomValidity("");
+        }
+});
+
+// Switch case to set validity prior to user inteactions
+// Since above listener only occurs on user input
+// Use switch case to avoid if() statement on each field
+switch (true) {
+    case firstName.value == "":
+        firstName.setCustomValidity("What is your name?");
+        firstName.className = 'def-input';
+
+    case lastName.value == "":
+        lastName.setCustomValidity("Let's be specific.");
+        lastName.className = 'def-input';
+
+    case email.value == "":
+        email.setCustomValidity("Enter your email address.");
+        email.className = 'def-input';
+
+    case phone.value == "":
+        phone.setCustomValidity("Enter your phone number.");
+        phone.className = 'def-input';
+
+    case pword.value == "":
+        pword.setCustomValidity("Must have a letter and a number.");
+        pword.className = 'def-input';
+
+    case pwordConf.value == "":
+        pwordConf.setCustomValidity("Passwords do not match.");
+        pwordConf.className = 'def-input';
+
+}
 // function notValidate () {
 //     if (firstName.validityState.tooshort) {
 //         firstName.className = 'notValid'
