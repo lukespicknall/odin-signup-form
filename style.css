@@ -194,3 +194,102 @@ input:focus {
 a {
     color: var(--theme1);
 }
+
+@media only screen and (max-width: 700px) {
+    .page-container {
+        display: block;
+        min-width: 360px;
+        /* position: relative; */
+    }
+    form {
+        justify-items: center;
+    }
+
+    .image-pane {
+        width: 100%;
+        height: 20vh;
+        /* display: block; 
+        position: absolute;
+        justify-content: space-between; */
+        overflow: hidden;
+        }
+
+    .left-image {
+        background-image: url("VeryLargeArrayNM-LJS-cropped.JPG");
+        background-position: left;
+        background-size:cover;
+        height: max(510px, 100vh); /* THIS fixed the y axis layout! */
+        width: 100%;
+    }
+    .banner {
+        top: 2vh;
+    }
+    .footer {
+        display: none;
+    }
+    
+      /*   .footer-text {
+        font-family: 'lemon';
+        font-size: max(1.5vh, 10px);
+        background-color: rgba(0, 0, 0, 0.63);
+        color: white;
+    } */
+    /* -----------------------------------*/
+    .right-pane {
+        width: 100%;
+        /* padding: 2vh 0 0px 0; */
+        /* height: max(710px, 100vh); */
+        background-color: rgb(240, 239, 241);
+        align-items: center;
+    }
+    
+    .pane-row {
+        margin: 40px;
+        max-width: 100%;
+        /* margin-left: 40px; */
+    }
+    
+    .about,
+    .welcome{
+        max-width: 100%;
+        min-width: 100%;
+        font-size: 17px;
+    }
+    
+    .form-block {
+        justify-content: center;
+        padding: 20px 40px 20px 40px;
+    }
+    
+    .form-field {
+        min-width: 100%;
+        margin: 0;
+
+
+    }
+
+    #log-in {
+    padding-bottom: 40px;
+    }
+
+    
+          /*       label {
+        color: rgb(56, 55, 55);
+        font-size: 12px;
+    }
+    
+    .pword-note {
+        font-size: 10.5px;
+        font-family: sans-serif;
+        color: rgb(102, 101, 101);
+        padding-left: 2px;
+        margin-top: 3px;
+    }
+    
+    input {
+        padding: 4px;
+        border: 2px solid #cccdce;
+        border-radius: 5px;
+        border-color: rgba(56, 55, 55, 0.356);
+    } */
+}
