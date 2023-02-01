@@ -18,44 +18,44 @@
                 <p class="logo-text">AmpEar</p>
             </div>
             <div class="footer">
-                <div class="footer-text">Luke Spicknall - Copyright 2023</div>
+                <div class="footer-text">Luke Spicknall - 2023</div>
             </div>
         </div>
         <div class="right-pane">
             <div class="pane-row" id="header">
-                <p class="about">Send <strong>highly imaginative</strong> and <strong>highly
+                <p class="about">Send <strong>very imaginative</strong> and <strong>very
                         encrypted</strong> messages from earth to your loved ones across the cosmos.
-                    Be part of the world's most respected, most detected, never intercepted inter-galactic greeting
-                    card
-                    service.</p>
-                <p class="welcome">Say "Hey" today!</p>
+                    Be part of the world's most respected, most requested, never rejected inter-galactic greeting
+                    card service.</p>
+                <p class="welcome">Say <em>"Hey"</em> today!</p>
             </div>
 
-            <form  action="#" method="get">
+            <form  action="http://httpbin.org/post" method="post">
                 <div class="form-block">
                     <div class="form-field">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" minlength="2" required>
+                        <input type="text" id="first-name" name="first-name" title="Enter your name" minlength="2" maxlength="24" required>
                     </div>
                     <div class="form-field">
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" minlength="2" required>
+                        <input type="text" id="last-name" name="last-name" title="And your last name" minlength="2" maxlength="24" required>
                     </div>
                     <div class="form-field">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" title="Enter your email" required>
                     </div>
                     <div class="form-field">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" title="Enter your phone number" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="###-###-####" title="Enter your ten digit phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{10}">
                     </div>
                     <div class="form-field">
                         <label for="pword">Password</label>
-                        <input type="password" id="pword" name="pword" required>
+                        <input type="password" id="pword" name="pword" title="Create a password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{2,}" required>
+                        <p class="pword-note">Must include a number and a letter</p>
                     </div>
                     <div class="form-field">
                         <label for="pword-confirm">Confirm Password</label>
-                        <input type="password" id="pword-confirm" name="pword-confirm" required>
+                        <input type="password" id="pword-confirm" name="pword-confirm" title="Confirm your password" required>
                     </div>
                 </div>
                 <button class="pane-row" id="button"><strong>Create Account</strong></button>
