@@ -3,22 +3,22 @@
     /* rgb(158, 101, 125); */
 }
 
-* {
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-family: 'lemon';
-}
-
 @font-face {
-    font-family: 'lemon';
-    src: url('LEMONMILK-Light.otf');
+    font-family: 'robot';
+    src: url('Roboto-Regular.ttf');
     font-size: none;
 }
 
 @font-face {
     font-family: 'dissolve';
     src: url('Disolve_light.ttf');
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'robot';
 }
 
 .page-container {
@@ -68,7 +68,7 @@
 }
 
 .footer-text {
-    font-family: 'lemon';
+    font-family: 'robot';
     font-size: max(1.5vh, 10px);
     background-color: rgba(0, 0, 0, 0.63);
     color: white;
@@ -89,12 +89,12 @@
 
 .about,
 .welcome {
-    font-family: 'lemon';
-    font-size: 19px;
+    font-family: 'robot';
+    font-size: 22px;
     margin-bottom: 5vh;
     max-width: 80vw;
     min-width: 600px;
-    color: rgb(58, 58, 58);
+    color: rgb(53, 53, 53);
 }
 
 .form-block {
@@ -119,7 +119,7 @@
 }
 
 label {
-    color: rgb(56, 55, 55);
+    color: rgb(66, 66, 66);
     font-size: 12px;
 }
 
@@ -132,6 +132,9 @@ label {
 }
 
 input {
+    height: 31px;
+    font-size: 15px;
+    color: rgb(39, 39, 39);
     padding: 4px;
     border: 2px solid #cccdce;
     border-radius: 5px;
@@ -170,9 +173,9 @@ input:focus {
 #button {
     margin-top: 3vh;
     margin-bottom: 2vh;
-    width: 245px;
-    height: 70px;
-    font-size: 22px;
+    width: 220px;
+    height: 65px;
+    font-size: 26px;
     color: var(--theme1);
     border: 2px solid var(--theme1);
     border-radius: 10px;
@@ -188,7 +191,8 @@ input:focus {
 /*----------------------*/
 #log-in {
     color: rgb(66, 65, 65);
-    font-size: 12px;
+    font-size: 15px;
+    padding-left: 5px;
 }
 
 a {
@@ -246,7 +250,7 @@ a {
     .welcome {
         max-width: 100%;
         min-width: 100%;
-        font-size: 17px;
+        font-size: 19px;
     }
 
     .form-block {

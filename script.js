@@ -4,8 +4,8 @@ const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const pword = document.getElementById("pword");
 const pwordConf = document.getElementById("pword-confirm");
+const inpt = document.getElementsByClassName('input-field')
 // const form = document.querySelector("form")
-
 
 // Checks validity and assings className
 // based on state
@@ -118,12 +118,4 @@ switch (true) {
     case pwordConf.value == "":
         pwordConf.setCustomValidity("Passwords do not match");
         pwordConf.className = 'def-input';
-
 }
-// function notValidate () {
-//     if (firstName.validityState.tooshort) {
-//         firstName.className = 'notValid'
-//     } else {
-//         firstName.className = 'definput'
-//     }
-// } 

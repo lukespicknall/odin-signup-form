@@ -34,28 +34,34 @@
                 <div class="form-block">
                     <div class="form-field">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" title="Enter your name" minlength="2" maxlength="24" required>
+                        <input type="text" class="input-field" id="first-name" name="first-name" title="Enter your name"
+                            minlength="2" maxlength="24" required>
                     </div>
                     <div class="form-field">
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" title="And your last name" minlength="2" maxlength="24" required>
+                        <input type="text" class="input-field" id="last-name" name="last-name"
+                            title="And your last name" minlength="2" maxlength="24" required>
                     </div>
                     <div class="form-field">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" title="Enter your email" required>
+                        <input type="email" class="input-field" id="email" name="email" title="Enter your email"
+                            required>
                     </div>
                     <div class="form-field">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="###-###-####" title="Enter your ten digit phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{10}">
+                        <input type="tel" class="input-field" id="phone" name="phone" placeholder="###-###-####"
+                            title="Enter your ten digit phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{10}">
                     </div>
                     <div class="form-field">
                         <label for="pword">Password</label>
-                        <input type="password" id="pword" name="pword" title="Create a password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{2,}" required>
+                        <input type="password" class="input-field" id="pword" name="pword" title="Create a password"
+                            pattern="(?=.*\d)(?=.*[a-zA-Z]).{2,}" required>
                         <p class="pword-note">Must include a number and a letter</p>
                     </div>
                     <div class="form-field">
                         <label for="pword-confirm">Confirm Password</label>
-                        <input type="password" id="pword-confirm" name="pword-confirm" title="Confirm your password" required>
+                        <input type="password" class="input-field" id="pword-confirm" name="pword-confirm"
+                            title="Confirm your password" required>
                     </div>
                 </div>
                 <button class="pane-row" id="button"><strong>Create Account</strong></button>
