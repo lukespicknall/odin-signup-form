@@ -52,9 +52,13 @@
     background-color: rgba(0, 0, 0, 0.288);
 }
 
+.logo {
+    height: clamp(30px, 5vh, 50px);
+    padding-right: 11px;
+}
 .logo-text {
     font-family: 'dissolve';
-    font-size: max(50px, 10vh, 60px);
+    font-size: clamp(50px, 10vh, 65px);
     color: white
 }
 
